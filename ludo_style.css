@@ -1,0 +1,90 @@
+/* page style */
+body{
+    font-family: "Segoe UI", monospace;
+    background-color: beige;
+    margin:0.2vmin;
+}
+header{
+    display: inline-block;
+    background-color: grey;
+    width:100%;
+    clear: both;
+}
+/* token style */
+.token{
+    border: 0.7vmin solid white;
+    border-radius: 50%;
+    width: 80%;
+    height: 80%;
+    margin: auto auto;
+}
+
+
+/* styles for ludo board */
+.board{
+    display:block;
+    float:left;
+    clear:left;
+    background-color: black;
+}
+.board_main_grid{
+    margin:0.4vmin;
+    border:1vmin solid black;
+    display:grid;
+    grid-template: "green V1 red" 32vmin
+                    "H1 middle H2" 16vmin
+                    "yellow V2 blue" 32vmin;
+    grid-template-columns: 32vmin 16vmin 32vmin;
+}
+.middle{
+    border:0.4vmin solid black;
+    border-radius: 100%;
+    background-color: yellowgreen;
+}
+.green{
+    background-color: green;
+    grid-area: green;
+}
+.red{
+    background-color: red;
+    grid-area: red;
+}
+.yellow{
+    background-color: yellow;
+    grid-area: yellow;
+}
+.blue{
+    background-color: blue;
+    grid-area: blue;
+}
+.home{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    padding:0;
+    margin:0;
+}
+.path{
+    background-color: lightgray;
+    display: grid;
+    grid-gap: 0.4vmin solid black;
+}
+
+.V1, .V2{
+    grid-template-columns: repeat(3, 1fr);
+}
+.H1, .H2{
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(6, 1fr);
+}
+.path > .cell{
+    border: 0.4vmin solid black;
+}
+.home > .cell{
+    border: 1vmin solid ghostwhite   ;
+    padding:0;
+    margin:0;
+}
+.cell{
+    overflow: hidden;
+}

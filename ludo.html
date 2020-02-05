@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <Title>
+        Ludo (Board Game)
+    </Title>
+    <link rel='stylesheet' href='ludo_style.css'>
+    </head>
+    <body>
+        <div class ="main">
+            <header>
+                Welcome to the Ludo board Game !!!
+            </header>
+            <div class="game">
+                <div class="board">
+                    <div class="board_main_grid">
+                        <div class="green home" id='g'></div>
+                        <div class="path V1" id="v1"></div>
+                        <div class="red home" id='r'></div>
+                        <div class="path H1" id='h1'></div><div class="middle"></div>
+                        <div class="path H2" id='h2'></div>
+                        <div class="yellow home" id='y'></div>
+                        <div class="path V2" id=v2></div>
+                        <div class="blue home" id='b'></div>
+                    </div>
+                </div>
+                
+                <div class="game_keys" style="margin: 1em;">
+                    <div><button onclick="control()" id="start_button" class='button'>Roll Dice</button></div>
+                    <strong><div id='dice'></div></strong><br>
+                    <strong><div id='player'></div></strong><br>
+                    <div id='token_status'></div><br>
+                    <div id='token_button'>
+                        <button onclick="set_token_1()" class="button">Select Token 1</button><br>
+                        <button onclick="set_token_2()" class="button">Select Token 2</button><br>
+                        <button onclick="set_token_3()" class="button">Select Token 3</button><br>
+                        <button onclick="set_token_4()" class="button">Select Token 4</button><br>
+                    </div>
+                    <br>
+                    <div><button onclick="play()" id="button_play" class = 'button'>Play</button></div>
+                </div></div>
+                <br>
+                <div id="user_message"></div>
+        </div>
+    <script src="ludo_script.js"></script>
+    <!--<button onclick="test()">Click to move</button>
+    <button onclick="test2()">Click to remove</button>-->
+    </body>
+</html>
